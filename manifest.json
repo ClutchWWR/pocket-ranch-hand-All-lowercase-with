@@ -1,0 +1,11 @@
+{
+  "name": "Pocket Ranch Hand",
+  "short_name": "Ranch Hand",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7f2e8",
+  "theme_color": "#49311e",
+  "icons": [
+    {"src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}
