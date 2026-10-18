@@ -103,7 +103,13 @@
 
       nameInput.value = suggestion;
 
-      status.textContent =
+      if (confidence < 50) {
+  status.textContent =
+    "I'm not sure what this is. My best guess is " +
+    suggestion + " (" + confidence +
+    "% confidence). Please check the name.";
+  return;
+}status.textContent =
         "Suggested: " + suggestion +
         " (" + confidence + "% confidence). " +
         "Check the name before saving.";
